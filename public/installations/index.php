@@ -88,10 +88,10 @@ if (file_exists(custom_base_path().'/.env')){
                 <div class="installations-logo">
                     <h4 class="mt-3 d-flex justify-content-center">
                         <img src="../assets/images/teachify-lms-logo.svg" />
-                        <span class="ml-3">Installations Wizard</span>
+                        <span class="ml-3">Programa de Instalación</span>
                     </h4>
                 </div>
-                <h5 class="text-info my-3">Server Requirements for the Teachify LMS</h5>
+                <h5 class="text-info my-3">Requerimientos del Servidor para la Instalación de la Plataforma Educativa</h5>
             </div>
 
             <div class="installations-requirements-check">
@@ -219,7 +219,7 @@ if (file_exists(custom_base_path().'/.env')){
                 <?php endif ?>
 
 
-                <p>Root directory writable to write <code>.env</code> file <?php echo is_writable(custom_base_path())? $strOk : $strFail.' <code>'.custom_base_path().'</code> is not writable'; ?> </p>
+                <p>Directorio Raíz habilitado para escritura archivo <code>.env</code>  <?php echo is_writable(custom_base_path())? $strOk : $strFail.' <code>'.custom_base_path().'</code> is not writable'; ?> </p>
 
                 <p>magic_quotes_gpc: <?php echo !ini_get('magic_quotes_gpc') ? $strOk : $strFail; ?> (value: <?php echo ini_get('magic_quotes_gpc') ?>)</p>
                 <p>register_globals: <?php echo !ini_get('register_globals') ? $strOk : $strFail; ?> (value: <?php echo ini_get('register_globals') ?>)</p>
@@ -227,15 +227,15 @@ if (file_exists(custom_base_path().'/.env')){
                 <p>mbstring.func_overload: <?php echo !ini_get('mbstring.func_overload') ? $strOk : $strFail; ?> (value: <?php echo ini_get('mbstring.func_overload') ?>)</p>
 
                 <p class="alert alert-light bg-light my-3">
-                    <strong>To continue the installation process, all the above requirements are needed to be checked <?php echo $strOk; ?> </strong> <br />
+                    <strong>Para continuar el proceso de instalación todos los requerimientos deben de estar en verde. <?php echo $strOk; ?> </strong> <br />
 
-                    If you found any of requirement cross icon <?php echo $strFail; ?>, please contact with your hosting provider to resolve this issue.
+                   Si encuentra un requerimiento con una X <?php echo $strFail; ?>, asegurese de configurar su servidor para que cumpla con este requerimiento.
                 </p>
 
             </div>
 
             <div class="text-center mb-5">
-                <a href="step/2" class="btn btn-primary btn-lg">Continue Installation</a>
+                <a href="step/2" class="btn btn-primary btn-lg">Continuar Instalación</a>
             </div>
 
         </div>

@@ -87,7 +87,7 @@ if (file_exists(custom_base_path().'/.env')){
 
                 <div class="installations-logo">
                     <h4 class="mt-3 d-flex justify-content-center">
-                        <img src="../assets/images/teachify-lms-logo.svg" />
+                        <img src="../assets/images/logocmh_solo_texto.png" />
                         <span class="ml-3">Programa de Instalación</span>
                     </h4>
                 </div>
